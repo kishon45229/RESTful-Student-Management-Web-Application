@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="container p-4 my-5 bg-white" style="width: fit-content; border-radius: 10px;">
+            <h3 class="text-center">Edit student details</h3>
+            <p class="text-center">Select student by index no.</p>
+        
+            <div class="container p-3  d-flex justify-content-center">
+                <input type="number" id="select-student-input" placeholder="Enter Index No" class="mx-1" style="width: 150px;">
+                <button type="button" class="btn btn-primary btn-dark" style="width: 100px; height: 42px;" onclick="searchSelectedStudent()">Select</button>
+            </div>
+
+            <div class="container mt-3" id="Searched-student-data">
+                <form id="updateStudentForm" method="POST" onsubmit="updateStudent(); return false;">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="uFirst Name" id="uFirst Name" required>
+                    
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="uLast Name" id="uLast Name" required>
+                    
+                    <label for="city">City:</label>
+                    <input type="text" name="uCity" id="uCity" required>
+                    
+                    <label for="district">District:</label>
+                    <input type="text" name="uDistrict" id="uDistrict" required>
+                    
+                    <label for="province">Province:</label>
+                    <input type="text" name="uProvince" id="uProvince" required>
+                    
+                    <label for="email">Email Address:</label>
+                    <input type="text" name="uEmail Address" id="uEmail Address" required>
+                    
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="text" name="uMobile Number" id="uMobile Number" required>
+                  
+                    <input type="submit" class="btn btn-primary btn-dark" style="height: 42px;" value="submit">
+                </form>
+            </div>
+        </div> 
+    </body>
+</html>

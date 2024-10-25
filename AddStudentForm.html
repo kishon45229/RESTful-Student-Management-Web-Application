@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="container p-4 my-5 bg-white" style="width: fit-content; border-radius: 10px;">
+            <h3 class="text-center">Add new student</h3>
+
+            <form id="newStudentForm" onsubmit="insertStudent(); return false;" method="POST">
+                <label for="firstName">First Name:</label>
+                <input type="text" name="nFirst Name" id="nFirst Name">
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="nLast Name" id="nLast Name">
+                
+                <label for="city">City:</label>
+                <input type="text" name="nCity" id="nCity">
+                
+                <label for="district">District:</label>
+                <input type="text" name="nDistrict" id="nDistrict">
+                
+                <label for="province">Province:</label>
+                <input type="text" name="nProvince" id="nProvince">
+                
+                <label for="email">Email Address:</label>
+                <input type="text" name="nEmail Address" id="nEmail Address">
+                
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" name="nMobile Number" id="nMobile Number">
+              
+                <input type="submit" class="btn btn-primary btn-dark" style="height: 42px;" value="Submit">
+            </form>
+        </div> 
+    </body>
+</html>

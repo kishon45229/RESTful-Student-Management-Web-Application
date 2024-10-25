@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Style.css"/>
+        <script src="Script.js"></script>
+    </head>
+
+    <body>
+        <div class="background-container"></div>
+
+        <header>
+            <h1>Horizon Campus</h1>
+            <p>All student details</p>
+        </header>
+
+        <main>
+            <section class="container mt-3" id="All-students-table"></section>
+
+            <section class="container p-4 my-5 bg-white" style="width: fit-content; border-radius: 10px;">
+                <h2 class="text-center">Search student by Index no.</h2>
+            
+                <div class="container p-3 d-flex justify-content-center">
+                    <input type="number" id="searchInput" placeholder="Enter Index No" class="mx-1" style="width: 150px;"/>
+                    <button type="button" class="btn btn-primary btn-dark" style="width: 100px; height: 42px;" onclick="searchStudent()">Search</button>
+                </div>
+
+                <div class="container p-2 mt-3" id="Searched-student-data"></div>
+            </section>
+        </main>
+
+        <nav class="container p-3 d-flex justify-content-center">
+            <button id="addStudentButton" type="button" class="btn btn-primary btn-dark mx-lg-5" style="width: 200px; height: 42px;" onclick="toggleAddStudentForm()">Add New Student</button>
+            <button id="editStudentButton" type="button" class="btn btn-primary btn-dark mx-lg-5" style="width: 200px; height: 42px;" onclick="toggleEditStudentForm()">Edit Student Details</button>
+            <button id="deleteStudentButton" type="button" class="btn btn-primary btn-dark mx-lg-5" style="width: 200px; height: 42px;" onclick="toggleDeleteStudentForm()">Delete Student</button>
+        </nav>
+
+        <section class="container mt-3" id="AddStudentFormContainer"></section>
+        <section class="container mt-3" id="EditStudentFormContainer"></section>
+        <section class="container mt-3" id="DeleteStudentContainer"></section>
+
+        <footer>
+            <div class="container-fluid py-3 text-center bg-white text-dark">
+                <p>&copy; 2023 Horizon Campus. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
